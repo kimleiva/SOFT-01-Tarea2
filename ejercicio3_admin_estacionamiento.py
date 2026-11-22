@@ -9,5 +9,13 @@
 #              por hora.
 # ==============================================================
 
+# --- CONSTANTES ---
+ESPACIOS = 20
+TARIFA_HORA = 800
+
+# --- INICIALIZACIÓN ---
+Ocupacion_vehiculos = 0
+salidas_registradas = 0
+recaudacion = 0
 
 
