@@ -47,3 +47,12 @@ for jornada in range(1, jornadas_planeadas + 1):
     while alimento_dia <= 0 or alimento_dia > alimento_disponible:
         print(f"Error: el consumo debe ser mayor que 0 y no superar {alimento_disponible} unidades.")
         alimento_dia = int(input("Alimento consumido (unidades): "))
+        
+ # --- PROCESO ---
+    agua_disponible = agua_disponible - agua_dia
+    alimento_disponible = alimento_disponible - alimento_dia
+    agua_consumida_total = agua_consumida_total + agua_dia
+    alimento_consumido_total = alimento_consumido_total + alimento_dia
+    jornadas_completadas = jornadas_completadas + 1
+
+    print(f"Saldo restante: {agua_disponible} litros de agua y {alimento_disponible} unidades de alimento")
