@@ -8,7 +8,7 @@
 #               consumo y los días que superan 150 litros.
 # ==============================================================
 
-# --- CONSTANTES ---
+# --- Constantes ---
 DIAS_SEMANA = 7
 UMBRAL_LITROS = 150
 
@@ -32,3 +32,11 @@ for dia in range(1, DIAS_SEMANA + 1):
         dias_sobre_umbral = dias_sobre_umbral + 1
 
 print(consumo_total, consumo_maximo, dias_sobre_umbral)
+
+# --- Salida ---
+consumo_promedio = consumo_total / DIAS_SEMANA
+print("--- Resumen semanal ---")
+print(f"Consumo total: {consumo_total} litros")
+print(f"Consumo promedio diario: {consumo_promedio} litros")
+print(f"Mayor consumo: {consumo_maximo} litros")
+print(f"Días que superaron {UMBRAL_LITROS} litros: {dias_sobre_umbral}")
