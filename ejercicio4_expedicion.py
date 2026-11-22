@@ -16,3 +16,10 @@ AGUA_INICIAL = 150
 ALIMENTO_INICIAL = 100
 JORNADAS_MINIMAS = 1
 JORNADAS_MAXIMAS = 30
+
+# --- INICIALIZACIÓN ---
+agua_disponible = AGUA_INICIAL
+alimento_disponible = ALIMENTO_INICIAL
+agua_consumida_total = 0
+alimento_consumido_total = 0
+jornadas_completadas = 0
