@@ -11,3 +11,8 @@
 #              diarios, descuenta los recursos.
 # ==============================================================
 
+# --- CONSTANTES ---
+AGUA_INICIAL = 150
+ALIMENTO_INICIAL = 100
+JORNADAS_MINIMAS = 1
+JORNADAS_MAXIMAS = 30
