@@ -14,8 +14,18 @@ ESPACIOS = 20
 TARIFA_HORA = 800
 
 # --- INICIALIZACIÓN ---
-Ocupacion_vehiculos = 0
+ocupacion_vehiculos = 0
 salidas_registradas = 0
 recaudacion = 0
 
-
+--- MENÚ PRINCIPAL ---
+while True=
+    print("--- ESTACIONAMIENTO ---")
+    print("1. Registrar ingreso")
+    print("2. Registrar salida")
+    print("3. Consultar ocupacion")
+    print("4. Consultar recaudacion")
+    print("5. Salir")
+    opcion = input("Seleccione una opcion: ")
+    
+    
