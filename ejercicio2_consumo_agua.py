@@ -17,11 +17,18 @@ consumo_total = 0
 dias_sobre_umbral = 0
 consumo_maximo = 0
 
-# --- Iteración ---
+# --- ITERACIÓN ---
 for dia in range(1, DIAS_SEMANA + 1):
-    consumo_dia = float(input(f"Día {dia} - Consumo de agua (litros): ")) 
+    consumo_dia = float(input(f"Día {dia} - Consumo de agua (litros): "))
     while consumo_dia < 0:
         print("Error: el consumo no puede ser negativo.")
         consumo_dia = float(input(f"Día {dia} - Consumo de agua (litros): "))
-        print(consumo_dia)  # temporal: se elimina en pasos posteriores
-        
+
+    # --- PROCESO ---
+    consumo_total = consumo_total + consumo_dia
+    if consumo_dia > consumo_maximo:
+        consumo_maximo = consumo_dia
+    if consumo_dia > UMBRAL_LITROS:
+        dias_sobre_umbral = dias_sobre_umbral + 1
+
+print(consumo_total, consumo_maximo, dias_sobre_umbral)
