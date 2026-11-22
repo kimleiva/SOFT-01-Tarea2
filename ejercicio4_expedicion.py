@@ -29,3 +29,21 @@ jornadas_planeadas = int(input("Cantidad de jornadas (1 a 30): "))
 while jornadas_planeadas < JORNADAS_MINIMAS or jornadas_planeadas > JORNADAS_MAXIMAS:
     print("Error: la cantidad de jornadas debe estar entre 1 y 30.")
     jornadas_planeadas = int(input("Cantidad de jornadas (1 a 30): "))
+    
+
+# --- ITERACIÓN: JORNADAS ---
+for jornada in range(1, jornadas_planeadas + 1):
+    if agua_disponible == 0 or alimento_disponible == 0:
+        break
+    print(f"--- Jornada {jornada} ---")
+    print(f"Disponible: {agua_disponible} litros de agua y {alimento_disponible} unidades de alimento")
+
+    agua_dia = int(input("Agua consumida (litros): "))
+    while agua_dia <= 0 or agua_dia > agua_disponible:
+        print(f"Error: el consumo debe ser mayor que 0 y no superar {agua_disponible} litros.")
+        agua_dia = int(input("Agua consumida (litros): "))
+
+    alimento_dia = int(input("Alimento consumido (unidades): "))
+    while alimento_dia <= 0 or alimento_dia > alimento_disponible:
+        print(f"Error: el consumo debe ser mayor que 0 y no superar {alimento_disponible} unidades.")
+        alimento_dia = int(input("Alimento consumido (unidades): "))
