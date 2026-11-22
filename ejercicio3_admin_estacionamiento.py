@@ -20,7 +20,7 @@ recaudacion_total = 0
 
 # --- MENÚ PRINCIPAL ---
 while True:
-    print("\n--- ESTACIONAMIENTO ---")
+    print("--- ESTACIONAMIENTO ---")
     print("1. Registrar ingreso")
     print("2. Registrar salida")
     print("3. Consultar ocupacion")
