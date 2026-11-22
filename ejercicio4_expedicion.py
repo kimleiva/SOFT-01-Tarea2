@@ -23,3 +23,9 @@ alimento_disponible = ALIMENTO_INICIAL
 agua_consumida_total = 0
 alimento_consumido_total = 0
 jornadas_completadas = 0
+
+# --- ENTRADA: CANTIDAD DE JORNADAS ---
+jornadas_planeadas = int(input("Cantidad de jornadas (1 a 30): "))
+while jornadas_planeadas < JORNADAS_MINIMAS or jornadas_planeadas > JORNADAS_MAXIMAS:
+    print("Error: la cantidad de jornadas debe estar entre 1 y 30.")
+    jornadas_planeadas = int(input("Cantidad de jornadas (1 a 30): "))
